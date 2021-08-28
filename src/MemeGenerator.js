@@ -50,7 +50,7 @@ class MemeGenerator extends Component {
                         name="bottomText" 
                         placeholder="Bottom Text" 
                         value={this.state.bottomText} 
-                        onchange={this.handleChange} 
+                        onChange={this.handleChange} 
                     />
                     <button>Gen</button>
                 </form>
