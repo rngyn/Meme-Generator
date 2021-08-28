@@ -19,6 +19,29 @@ class MemeGenerator extends Component {
                 this.setState({ allMemeImgs: memes })
             })
     }
+
+    render() {
+        return (
+            <div>
+                <form className="meme-form" onSubmit={this.handleSubmit}>
+                    <input
+                        type="text"
+                        name="topText"
+                        placeholder="Top Text"
+                        value={this.state.topText}
+                        onChange={this.handleChange}
+                    />
+                    <input 
+                        type="text" 
+                        name="bottomText" 
+                        placeholder="Bottom Text" 
+                        value={this.state.bottomText} 
+                        onchange={this.handleChange} 
+                    />
+                </form>
+            </div>
+        )
+    }
 }
 
 export default MemeGenerator
